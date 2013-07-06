@@ -303,6 +303,7 @@ var cornami = {
 	load: function() {
 		window.document.onkeydown = function(e) {
 			if (cornami.input == cornami.pattern) {
+				console.log('Konami code!');
 				cornify_add();
 				clearTimeout(cornami.clear);
 				return;
